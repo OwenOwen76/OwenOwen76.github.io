@@ -1,0 +1,33 @@
+(
+    characters: [
+        (
+            name: "Hero",
+            max_health: 100.0,
+            base_move_speed: 100.0,
+            run_speed_multiplier: 1.5,
+            texture_path: "player.png",
+            tile_size: 64,
+            atlas_columns: 9,
+            animations: {
+            Walk: (
+                start_row: 8,
+                frame_count: 9,
+                frame_time: 0.1,
+                directional: true,
+            ),
+            Run: (
+                start_row: 38,
+                frame_count: 8,
+                frame_time: 0.08,
+                directional: true,
+            ),
+            Jump: (
+                start_row: 26,
+                frame_count: 5,
+                frame_time: 0.1,
+                directional: true,
+            ),
+            },
+        )
+    ]
+)
