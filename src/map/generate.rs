@@ -102,7 +102,7 @@ pub fn spawn_chunk(
                     if !near_edge {
                         // 1. DENSE FOREST
                         if val > 0.55 {
-                            if x % 6 == 0 && y % 6 == 0 {
+                            if local_x % 6 == 0 && local_y % 6 == 0 {
                                 let tree_type = if val > 0.80 { "oak_tree" } else { "pine_tree" };
                                 spawn_bundle(
                                     commands,
@@ -116,7 +116,7 @@ pub fn spawn_chunk(
                         }
                         // 2. LARGE OBSTACLES
                         else if val > 0.45 && val < 0.5 {
-                            if x % 5 == 1 && y % 5 == 1 {
+                            if local_x % 5 == 1 && local_y % 5 == 1 {
                                 let obstacle = if val > 0.58 { "boulder" } else { "hollow_log" };
                                 spawn_bundle(
                                     commands,
@@ -130,7 +130,7 @@ pub fn spawn_chunk(
                         }
                         // 3. Small Decors
                         else if val < 0.4 && val > 0.3 {
-                            if x % 3 == 0 && y % 3 == 0 {
+                            if local_x % 3 == 0 && local_y % 3 == 0 {
                                 let clutter = match (x + y) % 6 {
                                     0 => "mushrooms",
                                     1 => "large_bush",
