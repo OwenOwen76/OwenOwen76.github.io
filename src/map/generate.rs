@@ -129,7 +129,7 @@ pub fn spawn_chunk(
                             }
                         }
                         // 3. Small Decors
-                        else if val > 0.4 && val < 0.3 {
+                        else if val < 0.4 && val > 0.3 {
                             if x % 3 == 0 && y % 3 == 0 {
                                 let clutter = match (x + y) % 6 {
                                     0 => "mushrooms",
