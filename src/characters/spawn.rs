@@ -7,7 +7,7 @@ use crate::characters::state::CharacterState;
 use bevy::prelude::*;
 
 pub const PLAYER_SCALE: f32 = 0.5;
-pub const PLAYER_Z_POSITION: f32 = 20.0;
+pub const PLAYER_Z_POSITION: f32 = 3.0;
 
 #[derive(Resource, Default)]
 pub struct CurrentCharacterIndex {
