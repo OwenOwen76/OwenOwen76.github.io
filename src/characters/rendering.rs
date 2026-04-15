@@ -5,7 +5,7 @@ use crate::characters::spawn::PLAYER_SCALE;
 use crate::map::generate::{GRID_Y, TILE_SIZE};
 
 const NODE_SIZE_Z: f32 = 1.0;
-const PLAYER_BASE_Z: f32 = 4.0;
+const PLAYER_BASE_Z: f32 = 3.0;
 const PLAYER_Z_OFFSET: f32 = 0.5;
 
 pub fn update_player_depth(
